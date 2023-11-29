@@ -2,10 +2,10 @@
 /* This could be colors, fonts, or padding sizes! */
 
 :root {
-    --main-text: #000;
-    --dark-bg: #333;
-    --light-bg: #f0f0f0;
-    --main-bg: #fff;
+    --primary-bg: #fff;
+    --primary-text: #000;
+    --primary-info-bg: #f0f0f0;
+    --secondary-info-bg: #333;
     --primary-contrast: #1f555d;
     --secondary-contrast: #176e77;
 }
