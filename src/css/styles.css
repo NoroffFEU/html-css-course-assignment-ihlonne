@@ -12,7 +12,7 @@ body {
 
 /* NAVIGATION */
 
-nav {
+header {
     position: fixed;
 
     display: flex;
@@ -29,7 +29,7 @@ nav {
     z-index: 99;
 }
 
-nav .info {
+header .info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,6 +40,10 @@ nav .info {
     background-color: var(--secondary-info-bg);
     color: #fff;
     font-size: 14px;
+}
+
+header .info span {
+    margin: 0 0.5rem;
 }
 
 .navbar {
@@ -62,23 +66,22 @@ nav .info {
     height: 100%;
 }
 
-.navbar .links {
-    display: flex;
-    flex-direction: row;
+.navbar .navigation ul {
+    display: inline-flex;
 }
 
-.navbar .links ul li {
-    display: flex;
-    flex-direction: row;
-}
-
-.navbar .links ul a {
+.navbar .navigation ul a {
     color: var(--primary-text);
     font-weight: 700;
     text-decoration: none;
 }
 
-.navbar .navbar-right-side {
+.navbar .navigation ul li {
+    list-style: none;
+    margin: 0 1rem;
+}
+
+.navbar .navbar--right {
     display: flex;
     flex-direction: row;
     justify-content: center;
