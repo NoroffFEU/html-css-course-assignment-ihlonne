@@ -1,19 +1,101 @@
 /* Use import to split up your CSS into manageable chunks */
-@import url("./_reset.css");
+@import url('./_reset.css');
 /* Files that are only needed to be imported are called partials */
 /* These are marked with an underscore: */
-@import url("./_variables.css");
+@import url('./_variables.css');
 /* Feel free to add as many of these imports as you need */
 
 body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+    font-family: calibri;
+    color: var(--primary-text);
 }
 
-.centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+/* NAVIGATION */
+
+nav {
+    position: fixed;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    height: 70px;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    background-color: var(--primary-bg);
+    z-index: 99;
+}
+
+nav .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 30px;
+    width: 100%;
+
+    background-color: var(--secondary-info-bg);
+    color: #fff;
+    font-size: 14px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 60px;
+
+    padding: 1rem 5rem 0 5rem;
+}
+.navbar .logo {
+    height: 35px;
+}
+
+.navbar .logo img {
+    height: 100%;
+}
+
+.navbar .links {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar .links ul li {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar .links ul a {
+    color: var(--primary-text);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navbar .navbar-right-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .search input {
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    border: 1px solid var(--primary-contrast);
+}
+
+.navbar .cart {
+    padding: 0 1rem;
+    height: 25px;
+    width: 25px;
+}
+
+.navbar .cart img {
+    height: 100%;
 }
