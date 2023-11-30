@@ -51,7 +51,8 @@ nav .info {
     width: 100%;
     height: 60px;
 
-    padding: 1rem 5rem 0 5rem;
+    background-color: #fff;
+    padding: 1rem 3.5rem;
 }
 .navbar .logo {
     height: 35px;
@@ -98,4 +99,65 @@ nav .info {
 
 .navbar .cart img {
     height: 100%;
+}
+
+/* HERO SECTION */
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    left: 0;
+    height: 100vh;
+    width: 100%;
+
+    background: url('/assets/images/heroImg.jpg') top left / cover no-repeat;
+}
+
+.hero-container__elmts {
+    margin-left: 6rem;
+}
+
+.hero-container__elmts p {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.hero-container__elmts span {
+    background-color: #fff;
+    height: 3px;
+    width: 325px;
+}
+
+.hero-container__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container__elmts button {
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-weight: bold;
+    border: 3px solid #fff;
+    width: 150px;
+    height: 50px;
+    margin: 1rem 1.5rem 0 0;
+    cursor: pointer;
+}
+
+.hero-container__elmts button a {
+    font-weight: 700;
+}
+
+.hero-container__elmts button:hover {
+    background-color: #fff;
+    color: var(--secondary-contrast);
+    font-weight: 700;
 }
