@@ -5,6 +5,9 @@
 @import url('./_variables.css');
 /* Feel free to add as many of these imports as you need */
 
+/* Hamburger menu */
+@import url('./_hamburger.css');
+
 body {
     font-family: calibri;
     color: var(--primary-text);
@@ -19,18 +22,18 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-
-    height: 70px;
+    height: 90px;
     width: 100%;
     top: 0;
     left: 0;
 
-    background-color: var(--primary-bg);
+    background-color: rgba(255, 255, 255, 0.521);
     z-index: 99;
 }
 
 header .info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
@@ -40,10 +43,19 @@ header .info {
     background-color: var(--secondary-info-bg);
     color: #fff;
     font-size: 14px;
+
+    @media (max-width: 800px) {
+        height: 100px;
+    }
 }
 
 header .info span {
+    display: block;
     margin: 0 0.5rem;
+
+    @media (max-width: 800px) {
+        display: none;
+    }
 }
 
 .navbar {
@@ -58,6 +70,7 @@ header .info span {
     background-color: #fff;
     padding: 1rem 3.5rem;
 }
+
 .navbar .logo {
     height: 35px;
 }
@@ -68,6 +81,10 @@ header .info span {
 
 .navbar .navigation ul {
     display: inline-flex;
+
+    @media (max-width: 800px) {
+        display: none;
+    }
 }
 
 .navbar .navigation ul a {
@@ -86,6 +103,10 @@ header .info span {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 800px) {
+        display: none;
+    }
 }
 
 .navbar .search input {

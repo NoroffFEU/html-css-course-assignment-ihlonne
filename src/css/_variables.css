@@ -2,10 +2,14 @@
 /* This could be colors, fonts, or padding sizes! */
 
 :root {
+    /* colours */
     --primary-bg: #fff;
     --primary-text: #000;
     --primary-info-bg: #f0f0f0;
     --secondary-info-bg: #333;
     --primary-contrast: #1f555d;
     --secondary-contrast: #176e77;
+
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --menu-speed: 0.75s;
 }
