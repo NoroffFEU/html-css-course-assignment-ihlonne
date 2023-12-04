@@ -53,7 +53,7 @@ header .info span {
     display: block;
     margin: 0 0.5rem;
 
-    @media (max-width: 800px) {
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
         display: none;
     }
 }
@@ -82,7 +82,7 @@ header .info span {
 .navbar .navigation ul {
     display: inline-flex;
 
-    @media (max-width: 800px) {
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
         display: none;
     }
 }
