@@ -231,3 +231,53 @@ header .info span {
         border: 3px solid var(--primary-text);
     }
 }
+
+/* Products section */
+
+.womens-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 33vh;
+    width: 100%;
+}
+
+.womens-container h4 {
+    font-size: 24px;
+    margin-bottom: 3em;
+}
+
+.womens-container__products {
+    display: flex;
+    gap: 1em;
+}
+
+.womens-container__products img {
+    width: 266px;
+}
+
+.mens-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 33vh;
+    width: 100%;
+}
+
+.mens-container h4 {
+    font-size: 24px;
+    margin-bottom: 3em;
+}
+
+.mens-container__products {
+    display: flex;
+    gap: 1em;
+}
+
+.mens-container__products img {
+    width: 266px;
+}
