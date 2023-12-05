@@ -82,11 +82,6 @@
         transform: rotate(90deg);
     }
 
-    /* Rotate on hover */
-    .menu-wrap .toggler:checked:hover + .hamburger > div {
-        transform: rotate(225deg);
-    }
-
     /* Show the menu */
 
     .menu-wrap .toggler:checked ~ .menu {
