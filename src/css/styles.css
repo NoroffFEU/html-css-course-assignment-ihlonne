@@ -156,10 +156,6 @@ header .info span {
 
 .hero-container__elmts {
     margin-left: 6rem;
-
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
-        margin-top: 15rem;
-    }
 }
 
 .hero-container__elmts p {
