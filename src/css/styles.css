@@ -27,7 +27,7 @@ header {
     top: 0;
     left: 0;
 
-    background-color: rgba(255, 255, 255, 0.521);
+    background-color: var(--navigation-bg);
     z-index: 99;
 }
 
@@ -68,7 +68,7 @@ header .info span {
     width: 100%;
     height: 60px;
 
-    background-color: #fff;
+    background-color: var(--navigation-bg);
     padding: 1rem 3.5rem;
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
@@ -116,6 +116,10 @@ header .info span {
 
 .navbar .search input {
     padding: 0.5rem 1.5rem;
+
+    background-color: inherit;
+    color: var(--primary-text);
+
     border-radius: 50px;
     border: 1px solid var(--primary-contrast);
 }
@@ -138,7 +142,6 @@ header .info span {
     justify-content: center;
     align-items: flex-start;
 
-    left: 0;
     min-height: 100vh;
     width: 100%;
 
@@ -148,14 +151,23 @@ header .info span {
         justify-content: flex-end;
         align-items: center;
 
-        height: 75vh;
+        height: 85lvh;
 
         background: url('/assets/images/heroImg.jpg') center / cover no-repeat;
     }
 }
 
 .hero-container__elmts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     margin-left: 6rem;
+
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        margin-left: 0;
+    }
 }
 
 .hero-container__elmts p {
@@ -170,7 +182,7 @@ header .info span {
     }
 }
 
-.hero-container__elmts span {
+.hero-container__elmts > span {
     background-color: #fff;
     height: 3px;
     width: 325px;
@@ -190,14 +202,16 @@ header .info span {
     background-color: transparent;
     padding: 0.5rem 1rem;
     color: #fff;
-    font-weight: bold;
+    font-weight: 900;
     border: 3px solid #fff;
     width: 150px;
     height: 50px;
-    margin: 1rem 1.5rem 0 0;
     cursor: pointer;
+    margin: 1.5rem 0.75rem;
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
+        background: var(--primary-bg);
+        color: var(--primary-text);
         border: 3px solid var(--primary-text);
     }
 }
@@ -209,5 +223,11 @@ header .info span {
 .hero-container__elmts button:hover {
     background-color: #fff;
     color: var(--secondary-contrast);
-    font-weight: 700;
+    font-weight: 900;
+
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        background: var(--primary-bg);
+        color: var(--primary-text);
+        border: 3px solid var(--primary-text);
+    }
 }
