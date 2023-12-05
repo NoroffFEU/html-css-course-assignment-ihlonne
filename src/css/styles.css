@@ -46,6 +46,7 @@ header .info {
 
     @media (max-width: 800px) {
         height: 100px;
+        font-size: 12px;
     }
 }
 
@@ -69,6 +70,10 @@ header .info span {
 
     background-color: #fff;
     padding: 1rem 3.5rem;
+
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        padding: 1rem;
+    }
 }
 
 .navbar .logo {
@@ -134,14 +139,27 @@ header .info span {
     align-items: flex-start;
 
     left: 0;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 
     background: url('/assets/images/heroImg.jpg') top left / cover no-repeat;
+
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        justify-content: flex-end;
+        align-items: center;
+
+        height: 75vh;
+
+        background: url('/assets/images/heroImg.jpg') center / cover no-repeat;
+    }
 }
 
 .hero-container__elmts {
     margin-left: 6rem;
+
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        margin-top: 15rem;
+    }
 }
 
 .hero-container__elmts p {
@@ -150,12 +168,20 @@ header .info span {
     font-weight: 700;
     color: #fff;
     letter-spacing: 3px;
+
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        color: var(--primary-text);
+    }
 }
 
 .hero-container__elmts span {
     background-color: #fff;
     height: 3px;
     width: 325px;
+
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        background-color: var(--primary-text);
+    }
 }
 
 .hero-container__buttons {
@@ -174,6 +200,10 @@ header .info span {
     height: 50px;
     margin: 1rem 1.5rem 0 0;
     cursor: pointer;
+
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        border: 3px solid var(--primary-text);
+    }
 }
 
 .hero-container__elmts button a {
