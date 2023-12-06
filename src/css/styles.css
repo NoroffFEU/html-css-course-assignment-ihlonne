@@ -1,10 +1,7 @@
-/* Use import to split up your CSS into manageable chunks */
+/* Reset */
 @import url('./_reset.css');
-/* Files that are only needed to be imported are called partials */
-/* These are marked with an underscore: */
+/* Variables */
 @import url('./_variables.css');
-/* Feel free to add as many of these imports as you need */
-
 /* Hamburger menu */
 @import url('./_hamburger.css');
 
@@ -234,6 +231,16 @@ header .info span {
 
 /* Products section */
 
+.products {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
 .womens-container {
     display: flex;
     flex-direction: column;
@@ -246,7 +253,7 @@ header .info span {
 
 .womens-container h4 {
     font-size: 24px;
-    margin-bottom: 3em;
+    margin: 3em 0;
 }
 
 .womens-container__products {
@@ -256,6 +263,12 @@ header .info span {
 
 .womens-container__products img {
     width: 266px;
+}
+
+.womens-container__products-product__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .mens-container {
@@ -270,7 +283,7 @@ header .info span {
 
 .mens-container h4 {
     font-size: 24px;
-    margin-bottom: 3em;
+    margin: 3em 0;
 }
 
 .mens-container__products {
@@ -280,4 +293,95 @@ header .info span {
 
 .mens-container__products img {
     width: 266px;
+}
+
+.mens-container__products-product__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* About Rainy Days Section */
+
+.about-container {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    width: 100%;
+}
+
+.about-container h1 {
+    margin-left: 20em;
+
+    font-family: var(--epilogue);
+    font-size: 2.25rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.about-container__bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    min-height: 500px;
+    width: 100%;
+
+    background: url('/assets/images/snowboarder.jpg') top right / cover
+        no-repeat;
+}
+
+.about-container__elmts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 10rem;
+    max-width: 550px;
+
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        margin-left: 0;
+    }
+}
+
+.about-container__elmts p {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: light;
+}
+
+.about-container__elmts span {
+    font-weight: bold;
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 4em;
+}
+
+.info-container h4 {
+    margin-top: 2em;
+}
+
+.info-container__elmts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 185px;
+    margin: 0 2em;
+
+    font-size: 0.875rem;
+    text-align: center;
 }
