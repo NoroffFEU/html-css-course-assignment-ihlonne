@@ -1,0 +1,9 @@
+/* Global */
+@import url('../../src/css/styles.css');
+
+/* Reset */
+@import url('./_reset.css');
+/* Variables */
+@import url('./_variables.css');
+/* Hamburger menu */
+@import url('./_hamburger.css');
