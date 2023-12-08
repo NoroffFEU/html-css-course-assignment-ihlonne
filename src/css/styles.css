@@ -10,6 +10,16 @@ body {
     color: var(--primary-text);
 }
 
+a {
+    color: var(--primary-text);
+}
+
+h1 {
+    font-family: var(--epilogue);
+    font-size: 2rem;
+    font-weight: 900;
+}
+
 /* NAVIGATION */
 
 header {
@@ -90,7 +100,6 @@ header .info span {
 }
 
 .navbar .navigation ul a {
-    color: var(--primary-text);
     font-weight: 700;
     text-decoration: none;
 }
@@ -420,18 +429,22 @@ header .info span {
     align-items: center;
 
     width: 100%;
-    padding: 2em 3em;
+    padding: 4em 5em;
+}
+
+.footer-container .footer-info-container .contact-info {
+    width: 200px;
 }
 
 .footer-container .footer-info-container .contact-info img {
-    width: 125px;
+    width: 150px;
 }
 
 .links {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
 
     width: 100%;
 }
@@ -440,5 +453,7 @@ header .info span {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+
+    margin: 0 10em;
 }
