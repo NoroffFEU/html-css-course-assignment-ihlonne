@@ -1,9 +1,31 @@
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
-  box-sizing: border-box;
-  min-height: 100vh;
-  margin: 0;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    font-family: calibri;
+    color: var(--primary-text);
+}
+
+a {
+    color: var(--primary-text);
+}
+
+h1 {
+    font-family: var(--epilogue);
+    font-size: 2rem;
+    font-weight: 900;
 }

@@ -5,22 +5,12 @@
 /* Hamburger menu */
 @import url('./_hamburger.css');
 
-body {
-    font-family: calibri;
-    color: var(--primary-text);
-}
+/* ------------------------- 
 
-a {
-    color: var(--primary-text);
-}
+NAVIGATION
+Header
 
-h1 {
-    font-family: var(--epilogue);
-    font-size: 2rem;
-    font-weight: 900;
-}
-
-/* NAVIGATION */
+------------------------- */
 
 header {
     position: fixed;
@@ -37,6 +27,13 @@ header {
     background-color: var(--navigation-bg);
     z-index: 99;
 }
+
+/* ------------------------- 
+
+NAVIGATION
+Info bar
+
+------------------------- */
 
 header .info {
     display: flex;
@@ -65,6 +62,13 @@ header .info span {
         display: none;
     }
 }
+
+/* ------------------------- 
+
+NAVIGATION
+Navigationbar
+
+------------------------- */
 
 .navbar {
     display: flex;
@@ -140,7 +144,12 @@ header .info span {
     height: 100%;
 }
 
-/* HERO SECTION */
+/* ------------------------- 
+
+LANDING PAGE
+Hero  
+
+------------------------- */
 
 .hero-container {
     display: flex;
@@ -238,7 +247,12 @@ header .info span {
     }
 }
 
-/* Products section */
+/* ------------------------- 
+
+LANDING PAGE 
+Womens and mens jackets
+
+------------------------- */
 
 .products {
     display: flex;
@@ -310,7 +324,12 @@ header .info span {
     align-items: center;
 }
 
-/* About Rainy Days Section */
+/* ------------------------- 
+
+LANDING PAGE
+Rainy days description 
+
+------------------------- */
 
 .about-container {
     display: flex;
@@ -395,6 +414,12 @@ header .info span {
     text-align: center;
 }
 
+/* ------------------------- 
+
+FOOTER
+
+------------------------- */
+
 .footer-container {
     display: flex;
     flex-direction: column;
@@ -405,6 +430,13 @@ header .info span {
     bottom: 0;
     width: 100%;
 }
+
+/* ------------------------- 
+
+FOOTER
+Subscribe section
+
+------------------------- */
 
 .subscribe-container {
     display: flex;
@@ -421,6 +453,13 @@ header .info span {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
+/* ------------------------- 
+
+FOOTER
+Links and information
+
+------------------------- */
 
 .footer-info-container {
     display: flex;
@@ -457,3 +496,81 @@ header .info span {
 
     margin: 0 10em;
 }
+
+/* ------------------------- 
+
+ABOUT PAGE
+
+------------------------- */
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.about-container img {
+    max-width: 750px;
+}
+
+/* ------------------------- 
+
+PRODUCT INFO PAGE
+
+------------------------- */
+
+.product-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.product-page-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    width: 100%;
+}
+
+.product-page-container__images-main img {
+    max-width: 455px;
+}
+
+.product-page-container__images-secondary img {
+    max-width: 135px;
+}
+
+.product-page-container__info-color-select img {
+    width: 50px;
+    height: 50px;
+
+    padding: 0.25rem;
+
+    border-radius: 500px;
+    border: 1px solid #000;
+}
+
+/* ------------------------- 
+
+CHECKOUT PAGE
+
+------------------------- */
+
+/* ------------------------- 
+
+CHECKOUT SUCCESS PAGE
+
+------------------------- */
+
+/* ------------------------- 
+
+CONTACT US PAGE
+
+------------------------- */
