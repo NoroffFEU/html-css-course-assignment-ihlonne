@@ -527,34 +527,144 @@ PRODUCT INFO PAGE
     align-items: center;
 
     min-height: 100vh;
+
+    margin: 3rem;
 }
 
 .product-page-container {
     display: flex;
 
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
-    min-height: 100vh;
-    width: 100%;
+    width: 80%;
+
+    margin-top: 6rem;
+    margin-bottom: 4rem;
 }
 
 .product-page-container__images-main img {
     max-width: 455px;
 }
 
+.product-page-container__images-secondary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
 .product-page-container__images-secondary img {
     max-width: 135px;
+}
+
+.product-page-container__info {
+    margin-left: 6rem;
+}
+
+.product-page-container__info h1 {
+    text-transform: uppercase;
+    width: 60%;
+}
+
+.product-page-container__info-text .price {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.product-page-container__info-text .description {
+    max-width: 85%;
+    margin-top: 3rem;
+}
+
+.product-page-container__info-color-select {
+    margin: 4rem 0 2rem 0;
 }
 
 .product-page-container__info-color-select img {
     width: 50px;
     height: 50px;
 
-    padding: 0.25rem;
+    padding: 0.15rem;
+    margin: 0 0.25rem;
 
     border-radius: 500px;
     border: 1px solid #000;
+
+    object-fit: cover;
+}
+
+.product-page-container__info-color-select p {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.info-size-select__btn {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+
+    margin: 0 0.15rem;
+    padding: 0.5rem;
+
+    background: var(--primary-bg);
+    font-weight: 700;
+
+    border-radius: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+
+    cursor: pointer;
+}
+
+.info-size-select__btn:hover {
+    background-color: var(--primary-text);
+    color: var(--primary-bg);
+}
+
+.info-size-select__btn-selected {
+    background-color: var(--primary-text);
+    color: var(--primary-bg);
+}
+
+.product-page-container__cta {
+    margin-top: 1.5rem;
+}
+
+.add-to-cart-btn {
+    width: 200px;
+    height: 45px;
+
+    background-color: var(--primary-text);
+    color: var(--primary-bg);
+    font-size: 1.25rem;
+    font-weight: 600;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.add-to-favorites-btn {
+    width: 45px;
+    height: 45px;
+
+    margin-left: 0.5rem;
+
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    font-size: 1.25rem;
+    font-weight: 600;
+
+    border-radius: 10px;
+    border: 2px solid var(--primary-text);
+
+    cursor: pointer;
+}
+
+.product-page__additional-info {
+    margin-top: 1.5rem;
 }
 
 /* ------------------------- 
