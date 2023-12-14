@@ -54,7 +54,7 @@ header .info {
     }
 }
 
-header .info span {
+header .info {
     display: block;
     margin: 0 0.5rem;
 
