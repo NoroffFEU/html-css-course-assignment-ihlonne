@@ -50,7 +50,7 @@
     }
 
     /* Hamburger line */
-    .menu-wrap .hamburger > div {
+    .mobile-navigation .menu-wrap .hamburger > div {
         position: relative;
 
         display: flex;
@@ -86,29 +86,29 @@
     }
 
     /* Toggler animation */
-    .toggler:checked + .hamburger div:first-child {
+    .toggler:checked ~ .mobile-navigation .menu-wrap .hamburger > div {
         transform: rotate(135deg);
     }
 
     /* Turns the lines into an X */
-    .toggler:checked + .hamburger div:first-child::before,
-    .toggler:checked + .hamburger div:first-child::after {
+    .toggler:checked ~ .mobile-navigation .menu-wrap .hamburger > div:before,
+    .toggler:checked ~ .mobile-navigation .menu-wrap .hamburger > div:after {
         top: 0;
         transform: rotate(90deg);
     }
 
     /* Show the menu */
 
-    .toggler:checked + .menu-wrap .menu {
+    .toggler:checked + .mobile-navigation .menu-wrap .menu {
         visibility: visible;
     }
 
-    .toggler:checked + .menu-wrap .menu > div {
+    .toggler:checked + .mobile-navigation .menu-wrap .menu > div {
         transform: scale(1);
         transition-duration: var(--menu-speed);
     }
 
-    .toggler:checked + .menu-wrap .menu > div > div {
+    .toggler:checked + .mobile-navigation .menu-wrap .menu > div > div {
         opacity: 1;
         transition: opacity 0.4s ease 0.4s;
     }
