@@ -1,6 +1,6 @@
 @import url('./_variables.css');
 
-.menu-wrap .hamburger {
+.mobile-navigation {
     display: none;
 }
 
