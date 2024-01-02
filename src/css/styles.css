@@ -123,7 +123,7 @@ Hero
     min-height: 100vh;
     width: 100%;
 
-    background: url('/assets/images/heroImg.jpg') top left / cover no-repeat;
+    background: url('/assets/images/heroImg.jpg') center / cover no-repeat;
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
         justify-content: flex-end;
