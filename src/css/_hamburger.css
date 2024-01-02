@@ -1,6 +1,6 @@
 @import url('./_variables.css');
 
-.menu-wrap {
+.mobile-navigation {
     display: none;
 }
 
@@ -11,6 +11,10 @@
 /* MOBILE NAVIGATION */
 
 @media only screen and (min-width: 360px) and (max-width: 768px) {
+    .mobile-navigation {
+        display: block;
+    }
+
     .menu-wrap {
         position: fixed;
         top: 0;
