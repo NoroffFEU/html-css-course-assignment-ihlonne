@@ -417,6 +417,38 @@ Subscribe section
     letter-spacing: 2px;
 }
 
+.submit-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 300px;
+
+    padding: 0.5rem;
+
+    border: 1px solid #fff;
+    border-radius: 0.5rem;
+}
+
+.submit-container input {
+    background: transparent;
+    padding: 0.25rem;
+    color: #fff;
+    border: none;
+}
+
+.submit-container input:focus {
+    outline: none;
+}
+
+.submit-container button {
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+}
+
 /* ------------------------- 
 
 FOOTER
