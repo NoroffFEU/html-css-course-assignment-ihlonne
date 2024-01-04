@@ -758,3 +758,83 @@ CHECKOUT SUCCESS PAGE
 CONTACT US PAGE
 
 ------------------------- */
+
+#contact-page {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+
+    min-height: 100vh;
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        margin: 6rem 0;
+    }
+}
+
+.contact-page__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.contact-page__container > div {
+    margin: 0 2rem;
+}
+
+.contact-page__form {
+    width: 500px;
+
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        width: 340px;
+    }
+}
+
+.contact-page__form input[type='text'],
+.contact-page__form input[type='email'],
+.contact-page__form input[type='subject'],
+.contact-page__form input[type='submit'] {
+    height: 45px;
+}
+
+.contact-page__form input,
+.contact-page__form select,
+.contact-page__form textarea {
+    background: #fafafa;
+
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+
+    font-family: inherit;
+
+    width: 100%;
+
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+}
+
+.contact-page__form input[type='submit'] {
+    background: var(--primary-contrast);
+    color: #fff;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.contact-page__faq {
+    max-width: 500px;
+}
+
+.contact-page__faq p:last-child {
+    font-style: italic;
+}
