@@ -78,6 +78,142 @@
             </nav>
         </header>
 
+        <main id="checkout-page">
+            <div class="checkout-page__top-container">
+                <h2>Order Review</h2>
+                <div class="order-review-container">
+                    <div class="order-review__order-image">
+                        <img src="./images/jacket.png" alt="item preview image">
+                    </div>
+                    <div class="order-review__order-info">
+                        <div>
+                            <div class="order-review__order-info__top">
+                                <h3>Helen Softshell Runner's Jacket</h3>
+                                <p><span>Color:</span> Red / Peach Pink</p>
+                                <p><span>Size:</span> S</p>
+                            </div>
+                            <div class="order-review__order-info__bottom">
+                                <div class="select-amount">
+                                    <p>-</p>
+                                    <p>1</p>
+                                    <p>+</p>
+                                </div>
+                        
+                                <div>
+                                    <i class="fa-solid fa-trash-can"></i>
+                                    <p>999 NOK</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="checkout-page__bottom-container">
+                <div class="shipping-info-container">
+                    <h2>Shipping Information</h2>
+                    <form>
+                        <label for="firstname">First name <span>*</span></label> <br>
+                        <input type="text" name="firstname" id="firstname" placeholder="First Name" required><br>
+                        <label for="lastname">Last name <span>*</span></label> <br>
+                        <input type="text" name="lastname" id="lastname" placeholder="Last Name" required><br>
+                        <label for="address">Street address <span>*</span></label> <br>
+                        <input type="text" name="address" id="address" placeholder="Bredalsmarken 15" required>
+                        <div>
+                            <div>
+                            <label for="postcode">Post code <span>*</span></label>
+                            <input type="text" name="postcode" id="postcode" placeholder="5006" required><br>
+                            </div>
+                        <div>
+                            <label for="city">City <span>*</span></label> 
+                            <input type="text" name="city" id="city" placeholder="Bergen" required><br>
+                        </div>
+                        </div>
+                        <label for="country">Country <span>*</span></label> <br>
+                        <input type="text" name="country" id="country" placeholder="Norway" required><br>
+                        <label for="epost">E-post <span>*</span></label> <br>
+                        <input type="email" name="email" id="email" placeholder="name@example.com" required><br>
+                        <label for="number">Phone number <span>*</span></label> <br>
+                        <input type="number" name="number" id="number" placeholder="00 00 00 00" required><br>
+                    </form>
+                    <p><span>*</span> Required fields</p>
+                </div>
+                <div class="checkout-page__bottom-container_right">
+                    <h2>Payment Method</h2>
+                    <div class="payment-method-container">
+                        <form class="payment-method-select">
+                            <input type="radio" name="option" id="vipps" value="vipps" checked>
+                            <label for="vipps">
+                                <img src="./images/vipps_logo_rgb.png" alt="">
+                                Vipps
+                            </label><br>
+                            <input type="radio" name="option" id="credit" value="credit">
+                            <label for="vipps">
+                                <img src="./images/Mastercard_2019_logo.svg.png" alt="">
+                                Credit Cart
+                            </label><br>
+                            <input type="radio" name="option" id="visa" value="visa">
+                            <label for="vipps">
+                                <img src="./images/Visa_Inc._logo.svg.webp" alt="">
+                                Visa
+                            </label><br>
+                            <input type="radio" name="option" id="klana" value="klana">
+                            <label for="vipps">
+                                <img src="./images/2560px-Klarna_Payment_Badge.svg.png" alt="">
+                                Klarna
+                            </label>
+                        </form>
+                        <form class="credit-card-info">
+                            <label for="cardnumber">Card number <span>*</span></label> <br>
+                            <input type="text" name="cardnumber" id="cardnumber" placeholder="1234 5678 9012 3456" required><br>
+                            <div>
+                                <div>
+                                    <label for="cardnumber">Expiration date <span>*</span></label> <br>
+                            <input type="text" name="expirationdate" id="expirationdate" placeholder="MM/YY" required>
+                                </div>
+                            <div><label for="cvv">CVV <span>*</span></label> <br>
+                                <input type="text" name="cvv" id="cvv" placeholder="123" required><br></div>
+                            </div>
+                        </form>
+                    </div>
+                    <h2>Order Summary</h2>
+                    <div class="order-summary-container">
+                        <div class="order-summary-container__img">
+                            <img src="./images/jacket.png" alt="item preview image">
+                        </div>
+                        <div class="order-summary__info">
+                            <div>
+                                <p>Helen Softshell Runner's Jacket</p>
+                                <p>999 NOK</p>
+                            </div>
+                            <div>
+                                <p>Subtotal</p>
+                                <p>999 NOK</p>
+                            </div>
+                            <div>
+                                <p>Shipping</p>
+                                <p>FREE</p>
+                            </div>
+                            <div>
+                                <span>Total</span>
+                                <p>999 NOK</p>
+                            </div>
+                        </div>
+                        </div>
+                    
+                        <div class="button-container">
+                            <button class="checkout-btn cta-btn">
+                                Continue Shopping
+                            </button>
+                            <button class="checkout-btn ">
+                                Checkout
+                            </button>
+                        </div>
+                    </main>
+                </div>
+            </div>
+
         <footer class="footer-container">
             <div class="subscribe-container">
                 <h4>Subscribe to our newsletter</h4>
