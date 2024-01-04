@@ -91,10 +91,14 @@ Navigationbar
     padding: 0.5rem 1.5rem;
 
     background-color: inherit;
-    color: var(--primary-text);
+    color: #fff;
 
     border-radius: 50px;
     border: 1px solid var(--primary-contrast);
+}
+
+.navbar .search input:focus {
+    outline: none;
 }
 
 .navbar .cart {
@@ -257,6 +261,10 @@ Womens and mens jackets
     align-items: center;
 }
 
+.womens-container__products-product__info > div {
+    font-weight: 700;
+}
+
 .mens-container {
     display: flex;
     flex-direction: column;
@@ -285,6 +293,10 @@ Womens and mens jackets
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.mens-container__products-product__info > div {
+    font-weight: 700;
 }
 
 /* ------------------------- 
