@@ -140,42 +140,44 @@
                     <p><span>*</span> Required fields</p>
                 </div>
                 <div class="checkout-page__bottom-container_right">
-                    <h2>Payment Method</h2>
                     <div class="payment-method-container">
-                        <form class="payment-method-select">
-                            <input type="radio" name="option" id="vipps" value="vipps" checked>
-                            <label for="vipps">
-                                <img src="./images/vipps_logo_rgb.png" alt="">
-                                Vipps
-                            </label><br>
-                            <input type="radio" name="option" id="credit" value="credit">
-                            <label for="vipps">
-                                <img src="./images/Mastercard_2019_logo.svg.png" alt="">
-                                Credit Cart
-                            </label><br>
-                            <input type="radio" name="option" id="visa" value="visa">
-                            <label for="vipps">
-                                <img src="./images/Visa_Inc._logo.svg.webp" alt="">
-                                Visa
-                            </label><br>
-                            <input type="radio" name="option" id="klana" value="klana">
-                            <label for="vipps">
-                                <img src="./images/2560px-Klarna_Payment_Badge.svg.png" alt="">
-                                Klarna
-                            </label>
-                        </form>
-                        <form class="credit-card-info">
-                            <label for="cardnumber">Card number <span>*</span></label> <br>
-                            <input type="text" name="cardnumber" id="cardnumber" placeholder="1234 5678 9012 3456" required><br>
-                            <div>
+                        <h2>Payment Method</h2>
+                        <div class="payment-method__content-container">
+                            <form class="payment-method-select">
+                                <input type="radio" name="option" id="vipps" value="vipps" checked>
+                                <label for="vipps">
+                                    <img src="./images/vipps_logo_rgb.png" alt="">
+                                    Vipps
+                                </label><br>
+                                <input type="radio" name="option" id="credit" value="credit">
+                                <label for="vipps">
+                                    <img src="./images/Mastercard_2019_logo.svg.png" alt="">
+                                    Credit Cart
+                                </label><br>
+                                <input type="radio" name="option" id="visa" value="visa">
+                                <label for="vipps">
+                                    <img src="./images/Visa_Inc._logo.svg.webp" alt="">
+                                    Visa
+                                </label><br>
+                                <input type="radio" name="option" id="klana" value="klana">
+                                <label for="vipps">
+                                    <img src="./images/2560px-Klarna_Payment_Badge.svg.png" alt="">
+                                    Klarna
+                                </label>
+                            </form>
+                            <form class="credit-card-info">
+                                <label for="cardnumber">Card number <span>*</span></label> <br>
+                                <input type="text" name="cardnumber" id="cardnumber" placeholder="1234 5678 9012 3456" required><br>
                                 <div>
-                                    <label for="cardnumber">Expiration date <span>*</span></label> <br>
-                            <input type="text" name="expirationdate" id="expirationdate" placeholder="MM/YY" required>
+                                    <div>
+                                        <label for="cardnumber">Expiration date <span>*</span></label> <br>
+                                <input type="text" name="expirationdate" id="expirationdate" placeholder="MM/YY" required>
+                                    </div>
+                                <div><label for="cvv">CVV <span>*</span></label> <br>
+                                    <input type="text" name="cvv" id="cvv" placeholder="123" required><br></div>
                                 </div>
-                            <div><label for="cvv">CVV <span>*</span></label> <br>
-                                <input type="text" name="cvv" id="cvv" placeholder="123" required><br></div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                     <div class="order-summary-container">
                         <h2>Order Summary</h2>

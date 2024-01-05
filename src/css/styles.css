@@ -867,16 +867,18 @@ CHECKOUT PAGE
 }
 
 .checkout-page__bottom-container {
-    display: flex;
-    flex-direction: row;
-    gap: 4rem;
-    margin-top: 2rem;
+    /*     display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-top: 2rem; /* 
+
+    width: 1040px; */
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        grid-template-columns: 1fr;
+        width: 300px;
     }
 }
 
@@ -888,8 +890,6 @@ Shipping information
 ------------------------- */
 
 .checkout-page__bottom-container .shipping-info-container {
-    width: 500px;
-
     @media only screen and (min-width: 360px) and (max-width: 768px) {
         width: 300px;
     }
@@ -932,12 +932,10 @@ Payment method
     flex-direction: column;
     justify-content: center;
 
-    width: 500px;
-
     @media only screen and (min-width: 360px) and (max-width: 768px) {
         width: 300px;
 
-        margin-top: -2rem;
+        margin-top: -2.5rem;
     }
 }
 
