@@ -818,6 +818,13 @@ CHECKOUT PAGE
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        flex-direction: row-reverse;
+        align-items: center;
+
+        gap: 0.5rem;
+    }
 }
 
 .order-review__order-info h3 {
@@ -842,6 +849,7 @@ CHECKOUT PAGE
 .order-review__order-info .select-amount p:nth-child(2) {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 0.25rem;
     margin: 0 0.5rem;
 
@@ -850,6 +858,12 @@ CHECKOUT PAGE
 
     border: 1px solid #000;
     border-radius: 50px;
+
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        font-size: 0.75rem;
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .checkout-page__bottom-container {
@@ -922,6 +936,8 @@ Payment method
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
         width: 300px;
+
+        margin-top: -2rem;
     }
 }
 
@@ -982,7 +998,8 @@ Order summary
 
 .order-summary-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
     gap: 1rem;
 
@@ -992,27 +1009,32 @@ Order summary
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         width: 330px;
+
+        margin-top: 2rem;
     }
 }
 
-.checkout-page__bottom-container_right h2 {
-    margin-top: 2rem;
+.order-summary__content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
-.order-summary-container > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 .order-summary__info > div {
     display: flex;
     justify-content: space-between;
-    width: 350px;
+    width: 360px;
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
-        width: 190px;
+        width: 300px;
     }
 }
 
@@ -1056,6 +1078,11 @@ Buttons
     gap: 2rem;
 
     margin-top: 6rem;
+
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .checkout-btn {
