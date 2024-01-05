@@ -596,12 +596,13 @@ Links and information
         max-width: 30px;
     }
 }
-----------
+/* ----------
     ABOUT
     PAGE
     -------------------------
     */
-    .about-us__content-container {
+
+.about-us__content-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -612,7 +613,7 @@ Links and information
     min-height: 100vh;
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
-        margin: 4rem 0;
+        margin: 6rem 0;
     }
 }
 
