@@ -325,9 +325,16 @@ Rainy days description
     font-weight: 900;
     font-style: italic;
     text-transform: uppercase;
+
+    z-index: 1;
+
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        margin-left: 0;
+    }
 }
 
 .about-container__bg {
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -338,28 +345,38 @@ Rainy days description
 
     background: url('/assets/images/snowboarder.jpg') top right / cover
         no-repeat;
-}
-
-.about-container__elmts {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-right: 10rem;
-    max-width: 550px;
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
-        margin-left: 0;
+        position: unset;
+
+        min-height: 212px;
+
+        background-position: center;
     }
 }
 
-.about-container__elmts p {
+.about-container__text {
+    position: relative;
+    z-index: 1;
+}
+.about-container__text p {
+    margin-left: 26em;
+    max-width: 550px;
     font-size: 2rem;
     font-style: italic;
     font-weight: light;
+
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        position: unset;
+        margin-left: 0;
+        padding: 0 2rem;
+
+        font-size: 1rem;
+        text-align: center;
+    }
 }
 
-.about-container__elmts span {
+.about-container__text span {
     font-weight: bold;
 }
 
