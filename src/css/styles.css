@@ -520,11 +520,19 @@ Links and information
     @media only screen and (min-width: 360px) and (max-width: 768px) {
         flex-direction: column;
         justify-content: center;
+
+        padding: 4em 0;
     }
 }
 
 .footer-container .footer-info-container .contact-info {
     width: 200px;
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .footer-container .footer-info-container .contact-info img {
@@ -545,6 +553,10 @@ Links and information
     }
 }
 
+.footer-container .footer-info-container .contact-info a {
+    margin-top: -1rem;
+}
+
 .links > div {
     display: flex;
     flex-direction: column;
@@ -559,13 +571,37 @@ Links and information
     }
 }
 
-/* ------------------------- 
+.social-media-container > div {
+    display: flex;
+    gap: 1rem;
+}
 
-ABOUT PAGE
+.payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 
-------------------------- */
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        flex-direction: row;
+        margin-top: 4rem;
+    }
+}
 
-.about-us__content-container {
+.payment img {
+    max-width: 50px;
+
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        max-width: 30px;
+    }
+}
+----------
+    ABOUT
+    PAGE
+    -------------------------
+    */
+    .about-us__content-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
