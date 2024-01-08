@@ -4,15 +4,19 @@
     box-sizing: inherit;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+    html,
+    :has(:target) {
+        scroll-behavior: smooth;
+        scroll-padding-top: 0.5rem;
+    }
+}
+
 body {
     box-sizing: border-box;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     margin: 0;
+    padding: 0;
 
     min-height: 100vh;
 
@@ -24,13 +28,29 @@ a {
     color: var(--primary-text);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
 h1 {
     font-family: var(--epilogue);
     font-size: 2rem;
     font-weight: 900;
+    text-transform: uppercase;
+}
+
+p {
+    max-width: 75ch;
+    text-wrap: pretty;
 }
 
 main {
+    container-type: inline-size;
     width: 100%;
 }
 
