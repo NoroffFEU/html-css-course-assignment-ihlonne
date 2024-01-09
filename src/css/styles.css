@@ -1,9 +1,9 @@
 /* Reset */
-@import url('./_reset.css');
+@import url('./reset.css');
 /* Variables */
-@import url('./_variables.css');
+@import url('./variables.css');
 /* Hamburger menu */
-@import url('./_hamburger.css');
+@import url('./hamburger.css');
 
 /* ------------------------- 
 
@@ -130,7 +130,7 @@ Hero
     min-height: 100vh;
     width: 100%;
 
-    background: url('./assets/images/heroImg.jpg') center / cover no-repeat;
+    background: url('../assets/images/heroImg.jpg') center / cover no-repeat;
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
         justify-content: flex-end;
@@ -138,7 +138,7 @@ Hero
 
         height: 85lvh;
 
-        background: url('./assets/images/heroImg.jpg') center / cover no-repeat;
+        background: url('../assets/images/heroImg.jpg') center / cover no-repeat;
     }
 }
 
