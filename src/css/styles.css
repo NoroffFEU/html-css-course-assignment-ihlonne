@@ -9,7 +9,7 @@
 /* Footer */
 @import url('./footer.css');
 
-/* Individual page stylesheets */ 
+/* Individual page stylesheets */
 @import url('../../pages/about/about.css');
 @import url('../../pages/checkout/checkout.html');
 @import url('../../pages/checkout-success/checkout-success.css');
@@ -58,12 +58,12 @@ Hero
     }
 }
 
-.hero-container__elmts p {
+.hero-container__elmts h1 {
     font-size: 24px;
     font-style: italic;
     font-weight: 700;
     color: #fff;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
         color: var(--primary-text);
@@ -151,7 +151,7 @@ Womens and mens jackets
     }
 }
 
-.womens-container h4 {
+.womens-container h2 {
     font-size: 24px;
     margin: 3em 0;
 }
@@ -189,7 +189,7 @@ Womens and mens jackets
     }
 }
 
-.mens-container h4 {
+.mens-container h2 {
     font-size: 24px;
     margin: 3em 0;
 }
@@ -310,7 +310,11 @@ Rainy days description
     }
 }
 
-.info-container h4 {
+.info-container p:first-of-type {
+    font-weight: 700;
+}
+
+.info-container p {
     margin-top: 2em;
 }
 

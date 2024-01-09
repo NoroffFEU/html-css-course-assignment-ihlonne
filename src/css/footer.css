@@ -51,6 +51,10 @@ Subscribe section
     border-radius: 0.5rem;
 }
 
+.submit-container label {
+    display: none;
+}
+
 .submit-container input {
     background: transparent;
     padding: 0.25rem;

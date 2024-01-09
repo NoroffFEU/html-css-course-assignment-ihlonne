@@ -80,6 +80,10 @@ Navigation bar
     }
 }
 
+.search label {
+    display: none;
+}
+
 .search input {
     padding: 0.5rem 1.5rem;
 

@@ -43,7 +43,8 @@
                 </nav>
                 <div class="navbar--right">
                     <div class="search">
-                        <input type="text" placeholder="Search..." />
+                        <label for="searchbar">Searchbar</label>
+                        <input type="text" id="searchbar" placeholder="Search..." />
                     </div>
                     <div class="cart">
                         <a href="./pages/checkout/checkout.html">
@@ -80,7 +81,7 @@
         <main>
             <section class="hero-container" id="hero">
                 <div class="hero-container__elmts">
-                    <p>PUSH THE COMFORT ZONE</p>
+                    <h1>PUSH THE COMFORT ZONE</h1>
                     <span></span>
                     <div class="hero-container__buttons">
                         <a href="#womens-container">
@@ -94,13 +95,13 @@
             </section>
             <section class="products">
                 <div id="womens-container" class="womens-container">
-                    <h4>WOMEN</h4>
+                    <h2>WOMEN</h2>
                     <div class="womens-container__products">
                         <article class="womens-container__products-product">
                             <a href="./pages/product page/product.html">
                                 <img
                                 src="./assets/images/women img 1.jpg"
-                                alt="women's jacket"
+                                alt="woman showcasing a navy blue training jacket"
                             />
                             <div
                                 class="womens-container__products-product__info"
@@ -114,7 +115,7 @@
                             <a href="./pages/product page/product.html">
                                 <img
                                 src="./assets/images/women img 2.jpg"
-                                alt="women's jacket"
+                                alt="woman showcasing a beige fleece jacket"
                             />
                             <div
                                 class="womens-container__products-product__info"
@@ -128,7 +129,7 @@
                             <a href="pages/product page/product.html">
                                 <img
                                 src="./assets/images/women img 3.jpg"
-                                alt="women's jacket"
+                                alt="woman showcasing a dark blue parka jacket"
                             />
                             <div
                                 class="womens-container__products-product__info"
@@ -142,7 +143,7 @@
                             <a href="pages/product page/product.html">
                                 <img
                                 src="./assets/images/women img 4.jpg"
-                                alt="women's jacket"
+                                alt="woman showcasing a black and blue training jacket"
                             />
                             <div
                                 class="womens-container__products-product__info"
@@ -155,13 +156,13 @@
                     </div>
                 </div>
                 <div id="mens-container" class="mens-container">
-                    <h4>MEN</h4>
+                    <h2>MEN</h2>
                     <div class="mens-container__products">
                         <article class="mens-container__products-product">
                             <a href="pages/product page/product.html">
                                 <img
                                 src="./assets/images/men img 1.jpg"
-                                alt="women's jacket"
+                                alt="man showcasing a grey zipper jacket"
                             />
                             <div class="mens-container__products-product__info">
                                 <div>Theo Zipper Jacket</div>
@@ -173,7 +174,7 @@
                             <a href="pages/product page/product.html">
                                 <img
                                 src="./assets/images/men img 2.jpg"
-                                alt="women's jacket"
+                                alt="man showcasing a black parka jacket"
                             />
                             <div class="mens-container__products-product__info">
                                 <div>Liam Parka</div>
@@ -186,7 +187,7 @@
                             <a href="pages/product page/product.html">
                                 <img
                                 src="./assets/images/men img 3.jpg"
-                                alt="women's jacket"
+                                alt="man showcasing a blue rain jacket"
                             />
                             <div class="mens-container__products-product__info">
                                 <div>Phil Jacket</div>
@@ -198,7 +199,7 @@
                             <a href="pages/product page/product.html">
                                 <img
                                 src="./assets/images/men img 4.jpg"
-                                alt="women's jacket"
+                                alt="man showcasing a black rain jacket"
                             />
                             <div class="mens-container__products-product__info">
                                 <div>Damien Jacket</div>
@@ -229,7 +230,7 @@
                     <div class="info-container">
                         <div class="info-container__elmts">
                             <i class="fa-solid fa-truck-fast fa-3x"></i>
-                            <h4>Free delivery over 800 NOK</h4>
+                            <p>Free delivery over 800 NOK</p>
                             <p>
                                 Get free delivery on purchases ordered over 800
                                 NOK
@@ -237,7 +238,7 @@
                         </div>
                         <div class="info-container__elmts">
                             <i class="fa-solid fa-arrows-rotate fa-3x"></i>
-                            <h4>30 days free exchange</h4>
+                            <p>30 days free exchange</p>
                             <p>
                                 Exchange your items for free within 30 days of
                                 receiving them
@@ -245,12 +246,12 @@
                         </div>
                         <div class="info-container__elmts">
                             <i class="fa-solid fa-2 fa-3x"></i>
-                            <h4>2 years warranty on all items</h4>
+                            <p>2 years warranty on all items</p>
                             <p>All items are issued a 2 year warranty</p>
                         </div>
                         <div class="info-container__elmts">
                             <i class="fa-solid fa-gift fa-3x"></i>
-                            <h4>Extended right of exchange</h4>
+                            <p>Extended right of exchange</p>
                             <p>Exchanges are open unti 17th of January, 2024</p>
                         </div>
                     </div>
@@ -260,9 +261,14 @@
 
         <footer class="footer-container">
             <div class="subscribe-container">
-                <h4>Subscribe to our newsletter</h4>
+                <h3>Subscribe to our newsletter</h3>
                 <div class="submit-container">
-                    <input type="search" placeholder="name@example.com" id="">
+
+                        <label for="subscribe">Subscribe
+                        </label>
+                        <input type="search" name="subscribe" id="subscribe" placeholder="name@example.com" id="">
+                    
+
                     <button type="submit">Submit</button>
                 </div>
             </div>
@@ -293,9 +299,9 @@
                             Follow Us
                         </h4>
                         <div>
-                            <a href=""><i class="fa-brands fa-facebook fa-lg"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram fa-xl"></i></a>
-                        <a href=""><i class="fa-brands fa-x-twitter fa-lg"></i></i></a>
+                            <a href="./index.html"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                        <a href="./index.html"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                        <a href="./index.html"><i class="fa-brands fa-x-twitter fa-lg"></i></i></a>
                         </div>
                     </div>
                 </div>
