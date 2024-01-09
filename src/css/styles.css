@@ -130,8 +130,8 @@ Hero
     min-height: 100vh;
     width: 100%;
 
-    background-image: url('https://raw.githubusercontent.com/NoroffFEU/html-css-course-assignment-ihlonne/main/assets/images/heroImg.jpg')
-        center / cover no-repeat;
+    background-image: url('../../assets/images/heroImg.jpg') center / cover
+        no-repeat;
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
         justify-content: flex-end;
@@ -139,8 +139,8 @@ Hero
 
         height: 85lvh;
 
-        background-image: url('https://raw.githubusercontent.com/NoroffFEU/html-css-course-assignment-ihlonne/main/assets/images/heroImg.jpg')
-            center / cover no-repeat;
+        background-image: url('../../assets/images/heroImg.jpg') center / cover
+            no-repeat;
     }
 }
 
