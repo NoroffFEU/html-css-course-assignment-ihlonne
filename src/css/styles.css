@@ -130,7 +130,7 @@ Hero
     min-height: 100vh;
     width: 100%;
 
-    background: url('/assets/images/heroImg.jpg') center / cover no-repeat;
+    background: url('./assets/images/heroImg.jpg') center / cover no-repeat;
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
         justify-content: flex-end;
@@ -138,7 +138,7 @@ Hero
 
         height: 85lvh;
 
-        background: url('/assets/images/heroImg.jpg') center / cover no-repeat;
+        background: url('./assets/images/heroImg.jpg') center / cover no-repeat;
     }
 }
 
@@ -357,7 +357,7 @@ Rainy days description
     min-height: 500px;
     width: 100%;
 
-    background: url('/assets/images/snowboarder.jpg') top right / cover
+    background: url('./assets/images/snowboarder.jpg') top right / cover
         no-repeat;
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
