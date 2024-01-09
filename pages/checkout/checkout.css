@@ -4,6 +4,10 @@
 @import url('../../src/css/variables.css');
 /* Hamburger menu */
 @import url('../../src/css/hamburger.css');
+/* Header */
+@import url('../../src/css/header.css');
+/* Footer */
+@import url('../../src/css/footer.css');
 
 /* ------------------------- 
 
