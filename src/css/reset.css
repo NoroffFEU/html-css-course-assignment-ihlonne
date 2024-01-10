@@ -19,6 +19,7 @@ body {
     padding: 0;
 
     min-height: 100vh;
+    width: 100%;
 
     font-family: calibri;
     color: var(--primary-text);
@@ -59,4 +60,11 @@ input[type='search']::-webkit-search-cancel-button,
 input[type='search']::-webkit-search-results-button,
 input[type='search']::-webkit-search-results-decoration {
     display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

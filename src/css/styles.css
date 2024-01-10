@@ -24,9 +24,6 @@ Hero
 ------------------------- */
 
 .hero-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
 
     min-height: 100vh;
@@ -45,12 +42,7 @@ Hero
     }
 }
 
-.hero-container__elmts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+.hero-container__items {
     margin-left: 6rem;
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
@@ -58,7 +50,7 @@ Hero
     }
 }
 
-.hero-container__elmts h1 {
+.hero-container__items h1 {
     font-size: 24px;
     font-style: italic;
     font-weight: 700;
@@ -70,7 +62,7 @@ Hero
     }
 }
 
-.hero-container__elmts > span {
+.hero-container__items > span {
     background-color: #fff;
     height: 3px;
     width: 325px;
@@ -86,7 +78,7 @@ Hero
     align-items: center;
 }
 
-.hero-container__elmts button {
+.hero-container__items button {
     background-color: transparent;
     padding: 0.5rem 1rem;
     color: #fff;
@@ -104,11 +96,11 @@ Hero
     }
 }
 
-.hero-container__elmts button a {
+.hero-container__items button a {
     font-weight: 700;
 }
 
-.hero-container__elmts button:hover {
+.hero-container__items button:hover {
     background-color: #fff;
     color: var(--secondary-contrast);
     font-weight: 900;
@@ -127,22 +119,12 @@ Womens and mens jackets
 
 ------------------------- */
 
-.products {
-    display: flex;
-
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+.products-container {
     min-height: 100vh;
 }
 
-.womens-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+.women-container,
+.men-container {
     min-height: 33vh;
     width: 100%;
 
@@ -151,68 +133,34 @@ Womens and mens jackets
     }
 }
 
-.womens-container h2 {
+.women-container h2,
+.men-container h2 {
     font-size: 24px;
     margin: 3em 0;
 }
 
-.womens-container__products {
+.women-container__products,
+.men-container__products {
     display: flex;
     gap: 1em;
 }
 
-.womens-container__products img {
-    width: 266px;
+.women-container__products img,
+.men-container__products img {
+    max-width: 266px;
 }
 
-.womens-container__products-product__info {
+.women-container__products-product__info,
+.men-container__products-product__info {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.womens-container__products-product__info > div {
+.women-container__products-product__info > div,
+.men-container__products-product__info > div {
     font-weight: 700;
 }
-
-.mens-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    min-height: 33vh;
-    width: 100%;
-
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
-        overflow: hidden;
-    }
-}
-
-.mens-container h2 {
-    font-size: 24px;
-    margin: 3em 0;
-}
-
-.mens-container__products {
-    display: flex;
-    gap: 1em;
-}
-
-.mens-container__products img {
-    width: 266px;
-}
-
-.mens-container__products-product__info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.mens-container__products-product__info > div {
-    font-weight: 700;
-}
-
 /* ------------------------- 
 
 LANDING PAGE
@@ -221,12 +169,6 @@ Rainy days description
 ------------------------- */
 
 .about-container {
-    display: flex;
-
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     min-height: 80vh;
     width: 100%;
 
@@ -252,9 +194,7 @@ Rainy days description
 
 .about-container__bg {
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
     align-items: flex-end;
 
     min-height: 500px;
@@ -298,10 +238,8 @@ Rainy days description
 }
 
 .info-container {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 
     margin: 0 0 6em 0;
 
@@ -318,12 +256,7 @@ Rainy days description
     margin-top: 2em;
 }
 
-.info-container__elmts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+.info-container__items {
     max-width: 185px;
     margin: 0 2em;
 
