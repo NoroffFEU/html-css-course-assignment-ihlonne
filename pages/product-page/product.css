@@ -1,9 +1,9 @@
 /* Reset */
-@import url('./reset.css');
+@import url('../../src/css/reset.css');
 /* Variables */
-@import url('./variables.css');
+@import url('../../src/css/variables.css');
 /* Hamburger menu */
-@import url('./hamburger.css');
+@import url('../../src/css/hamburger.css');
 /* Header */
 @import url('../../src/css/header.css');
 /* Footer */
