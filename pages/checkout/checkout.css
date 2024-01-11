@@ -15,18 +15,12 @@ CHECKOUT PAGE
 
 ------------------------- */
 
-#checkout-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.checkout-page-container {
     margin: 4rem 0;
 }
 
 .order-review-container {
-    display: flex;
-    justify-items: center;
-    align-items: center;
+    flex-direction: row;
     gap: 2rem;
 
     width: 1040px;
@@ -135,8 +129,6 @@ CHECKOUT PAGE
 }
 
 .checkout-page__bottom-container {
-    /*     display: flex;
-    flex-direction: row; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
@@ -196,10 +188,6 @@ Payment method
 ------------------------- */
 
 .checkout-page__bottom-container_right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
     @media only screen and (min-width: 360px) and (max-width: 768px) {
         width: 300px;
 
@@ -263,9 +251,6 @@ Order summary
 ------------------------- */
 
 .order-summary-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
     gap: 1rem;
 
@@ -274,7 +259,6 @@ Order summary
     width: 500px;
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
-        display: flex;
         justify-content: flex-start;
         width: 330px;
 
