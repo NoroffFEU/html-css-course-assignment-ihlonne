@@ -16,53 +16,43 @@ PRODUCT INFO PAGE
 ------------------------- */
 
 .product-page {
-    /*     display: grid;
-    grid-template-columns: 1fr, 1fr;
-
-    justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center; */
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     min-height: 100vh;
 }
 
 .product-page__items-container {
-    display: flex;
-
-    justify-content: flex-start;
-    align-items: center;
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    align-items: flex-start;
 
     margin: 6rem 4rem;
 
+    width: 80%;
+
     @media only screen and (min-width: 360px) and (max-width: 768px) {
+        display: flex;
         flex-direction: column;
         justify-content: center;
     }
 }
 
+.product-page__items-container__images-main {
+    max-width: 100%;
+}
+
 .product-page__items-container__images-main img {
-    max-width: 455px;
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
-        width: 320px;
-    }
+    max-width: 100%;
 }
 
 .product-page__items-container__images-secondary {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
+
+    max-width: 100%;
 }
 
 .product-page__items-container__images-secondary img {
-    max-width: 135px;
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
-        width: 100px;
-    }
+    max-width: 30%;
 }
 
 .product-page__items-container__info {
@@ -81,9 +71,6 @@ PRODUCT INFO PAGE
 }
 
 .product-page__items-container__info h1 {
-    text-transform: uppercase;
-    width: 60%;
-
     @media only screen and (min-width: 360px) and (max-width: 768px) {
         font-size: 1rem;
         width: 100%;
@@ -210,6 +197,12 @@ PRODUCT INFO PAGE
     border: 2px solid var(--primary-text);
 
     cursor: pointer;
+}
+
+.add-to-favorites-btn:hover {
+    color: #a40013;
+
+    transition: 1s ease;
 }
 
 .product-page__additional-info {
