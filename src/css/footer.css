@@ -103,7 +103,7 @@ Links and information
 }
 
 .footer-container .footer-info-container .contact-info {
-    width: 200px;
+    width: auto;
     @media only screen and (min-width: 360px) and (max-width: 768px) {
         display: flex;
         flex-direction: column;
@@ -113,7 +113,15 @@ Links and information
 }
 
 .footer-container .footer-info-container .contact-info img {
-    width: 150px;
+    max-width: 180px;
+}
+
+.footer-container .footer-info-container .contact-info > div {
+    max-width: 100%;
+}
+
+.contact-info > div a {
+    margin-bottom: 1rem;
 }
 
 .links {
@@ -130,17 +138,13 @@ Links and information
     }
 }
 
-.footer-container .footer-info-container .contact-info a {
-    margin-top: -1rem;
-}
-
 .links > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 
-    margin: 0 10em;
+    width: 25%;
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
         align-items: center;
