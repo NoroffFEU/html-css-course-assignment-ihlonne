@@ -157,6 +157,10 @@ Links and information
     gap: 1rem;
 }
 
+.social-media-container > div .some-icon:hover {
+    color: var(--primary-contrast);
+}
+
 .payment {
     display: flex;
     flex-direction: column;
