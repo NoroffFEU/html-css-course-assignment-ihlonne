@@ -71,16 +71,21 @@ Hero
     align-items: center;
 }
 
-.hero-container__items button {
+.hero-container__items a {
+    padding: 1rem 2rem;
+    margin: 1.5rem 0.45rem;
+
     background-color: transparent;
-    padding: 0.5rem 1rem;
     color: #fff;
     font-weight: 900;
+
+    text-align: center;
+    text-decoration: none;
+
     border: 3px solid #fff;
-    width: 150px;
-    height: 50px;
+
+    transition: 1s ease;
     cursor: pointer;
-    margin: 1.5rem 0.75rem;
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
         background: var(--primary-bg);
@@ -89,11 +94,7 @@ Hero
     }
 }
 
-.hero-container__items button a {
-    font-weight: 700;
-}
-
-.hero-container__items button:hover {
+.hero-container__items a:hover {
     background-color: #fff;
     color: var(--secondary-contrast);
     font-weight: 900;
