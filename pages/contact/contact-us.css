@@ -46,7 +46,7 @@ CONTACT US PAGE
     max-width: 500px;
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -88,7 +88,7 @@ CONTACT US PAGE
     max-width: 500px;
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
-        width: 100%;
+        width: 90%;
     }
 }
 
