@@ -46,13 +46,14 @@ CHECKOUT SUCCESS PAGE
     }
 }
 
-.checkout-success__content button {
+.checkout-success__content a {
     margin-top: 3rem;
     padding: 0.75rem 3rem;
 
     background-color: #000;
     color: #fff;
     font-weight: 700;
+    text-decoration: none;
 
     border-radius: 0.5rem;
 
