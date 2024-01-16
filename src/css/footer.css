@@ -120,8 +120,8 @@ Links and information
     max-width: 100%;
 }
 
-.contact-info > div a {
-    margin-bottom: 1rem;
+.footer-info-container .contact-info p {
+    margin-bottom: 0;
 }
 
 .links {
