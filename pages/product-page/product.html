@@ -26,55 +26,63 @@
     </head>
     <body> 
         <header>
-            <div class="navbar">
-                <div class="logo">
-                    <a href="../../index.html">
-                        <img src="../../assets/images/logo.png" alt="company logo" />
+        <div class="navbar">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="../../assets/images/logo.png" alt="company logo" />
+                </a>
+            </div>
+            <nav class="navigation">
+                <ul class="navigation__links">
+                    <li><a href="../../index.html#women-container">Women</a></li>
+                    <li><a href="../../index.html#men-container">Men</a></li>
+                    <li><a href="../about/about.html">About</a></li>
+                    <li><a href="../contact/contact-us.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="navbar--right">
+                <div class="search">
+                    <label for="searchbar">Searchbar</label>
+                    <input type="text" id="searchbar" placeholder="Search..." />
+                </div>
+                <div class="cart">
+                    <a href="./pages/checkout/checkout.html">
+                        <img
+                            src="../../assets/images/shopping-bag.png"
+                            
+                            alt="shopping cart icon"
+                        />
                     </a>
                 </div>
-                <nav class="navigation">
-                    <ul class="navigation__links">
-                        <li><a href="../../index.html#womens-container">Women</a></li>
-                        <li><a href="../../index.html#mens-container">Men</a></li>
-                        <li><a href="../about/about.html">About</a></li>
-                        <li><a href="../contact/contact-us.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="navbar--right">
-                    <div class="search">
-                        <input type="text" placeholder="Search..." />
-                    </div>
-                    <div class="cart">
-                        <a href="../checkout/checkout.html">
-                            <img
-                                src="../../assets/images/shopping-bag.png"
-                                alt="shopping cart icon"
-                            />
-                        </a>
+            </div>
+        </div>
+    </header>
+    <input type="checkbox" class="toggler" />
+    <header class="mobile-navigation">
+        <div class="mobile-logo">
+            <a href="../../index.html">
+                <img src="../../assets/images/logo.png" alt="company logo" />
+            </a>
+        </div>
+        <nav class="menu-wrap">
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul class="navigation__links">
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="../../index.html#womens-container">Women</a></li>
+                            <li><a href="../../index.html#mens-container">Men</a></li>
+                            <li><a href="../about/about.html">About</a></li>
+                            <li><a href="../contact/contact-us.html">Contact</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </header>
-        <input type="checkbox" class="toggler" />
-        <header class="mobile-navigation">
-            <nav class="menu-wrap">
-                <div class="hamburger">
-                    <div></div>
-                </div>
-                <div class="menu">
-                    <div>
-                        <div>
-                            <ul class="navigation__links">
-                                <li><a href="../../index.html#womens-container">Women</a></li>
-                                <li><a href="../../index.html#mens-container">Men</a></li>
-                                <li><a href="../about/about.html">About</a></li>
-                                <li><a href="../contact/contact-us.html">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        </nav>
+    </header>
 
     <main id="product-page" class="product-page-container container">
         <section class="product-page__items-container">
