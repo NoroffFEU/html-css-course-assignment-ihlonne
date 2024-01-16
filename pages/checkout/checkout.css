@@ -335,7 +335,15 @@ Buttons
     }
 }
 
+.button-container a {
+    text-decoration: none;
+}
+
 .checkout-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     gap: 1rem;
 
     width: 165px;
