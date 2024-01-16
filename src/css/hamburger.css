@@ -135,23 +135,26 @@
     }
 
     .menu-wrap .menu > div {
+        position: fixed;
+
         display: flex;
-        flex: none;
         justify-content: center;
         align-items: center;
 
-        width: 200vw;
-        height: 200vw;
+        top: 0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vw;
 
         background: var(--primary-bg);
-        opacity: 0.7;
-        border-radius: 50%;
+        opacity: 1;
         transform: scale(0);
         transition: all 0.4s ease;
     }
 
     .menu-wrap .menu > div > div {
-        text-align: right;
+        text-align: center;
         max-width: 90vw;
         max-height: 100vh;
         opacity: 0;
