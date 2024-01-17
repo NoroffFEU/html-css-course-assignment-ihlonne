@@ -18,9 +18,6 @@ body {
     margin: 0;
     padding: 0;
 
-    min-height: 100vh;
-    width: 100%;
-
     font-family: calibri;
     color: var(--primary-text);
 }
