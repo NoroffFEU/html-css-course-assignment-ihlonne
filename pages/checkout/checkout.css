@@ -19,15 +19,13 @@ CHECKOUT PAGE
     margin: 4rem 0;
 }
 
+.checkout-page__top-container {
+    width: 90%;
+}
+
 .order-review-container {
     flex-direction: row;
     gap: 2rem;
-
-    width: 1040px;
-
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
-        width: 300px;
-    }
 }
 
 .order-review__order-image {
@@ -149,9 +147,25 @@ Shipping information
 
 ------------------------- */
 
-.checkout-page__bottom-container .shipping-info-container {
+.checkout-page__bottom-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    max-width: 90%;
+
     @media only screen and (min-width: 360px) and (max-width: 768px) {
-        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 90%;
+    }
+}
+
+.checkout-page__bottom-container .shipping-info-container {
+    max-width: 100%;
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        width: 90%;
     }
 }
 
@@ -188,10 +202,16 @@ Payment method
 ------------------------- */
 
 .checkout-page__bottom-container_right {
+    max-width: 100%;
     @media only screen and (min-width: 360px) and (max-width: 768px) {
-        width: 300px;
+        width: 90%;
+    }
+}
 
-        margin-top: -2.5rem;
+.payment-method-container {
+    max-width: 100%;
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        width: 90%;
     }
 }
 
@@ -256,11 +276,11 @@ Order summary
 
     margin-top: 2rem;
 
-    width: 500px;
+    max-width: 100%;
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
         justify-content: flex-start;
-        width: 330px;
+        width: 90%;
 
         margin-top: 2rem;
     }
