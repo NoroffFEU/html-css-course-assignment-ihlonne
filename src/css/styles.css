@@ -256,4 +256,8 @@ Rainy days description
 
     font-size: 0.875rem;
     text-align: center;
+
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
+        margin-top: 1rem;
+    }
 }
