@@ -95,18 +95,18 @@ CHECKOUT PAGE
     font-weight: 700;
 }
 
-.order-review__order-info .select-amount {
+.select-amount {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 0.5rem;
 }
 
-.order-review__order-info .select-amount p {
+.select-amount p {
     font-weight: 700;
 }
 
-.order-review__order-info .select-amount p:nth-child(2) {
+.select-amount p:nth-child(2) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,14 +162,14 @@ Shipping information
     }
 }
 
-.checkout-page__bottom-container .shipping-info-container {
+.shipping-info-container {
     max-width: 100%;
     @media only screen and (min-width: 360px) and (max-width: 768px) {
         width: 90%;
     }
 }
 
-.checkout-page__bottom-container .shipping-info-container input {
+.shipping-info-container input {
     height: 45px;
     width: 100%;
 
@@ -180,17 +180,17 @@ Shipping information
     border-radius: 0.5rem;
 }
 
-.checkout-page__bottom-container .shipping-info-container form > div {
+.shipping-info-container form > div {
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
 
-.checkout-page__bottom-container .shipping-info-container form > div > div {
+.shipping-info-container form > div > div {
     width: 250px;
 }
 
-.checkout-page__bottom-container .shipping-info-container span {
+.shipping-info-container span {
     color: rgb(202, 25, 25);
 }
 
@@ -215,32 +215,26 @@ Payment method
     }
 }
 
-.checkout-page__bottom-container_right
-    .payment-method-container
-    .payment-method-select
-    input {
+.payment-method-select input {
     margin-right: 2rem;
 }
 
-.checkout-page__bottom-container_right
-    .payment-method-container
-    .payment-method-select
-    img {
+.payment-method-select img {
     width: 25px;
     max-height: 15px;
 }
 
-.checkout-page__bottom-container_right .credit-card-info {
+.credit-card-info {
     margin-top: 2rem;
 }
 
-.checkout-page__bottom-container_right .credit-card-info > div {
+.credit-card-info > div {
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
 
-.checkout-page__bottom-container_right .credit-card-info > div > div {
+.credit-card-info > div > div {
     width: 250px;
 
     @media only screen and (min-width: 360px) and (max-width: 768px) {
@@ -248,7 +242,7 @@ Payment method
     }
 }
 
-.checkout-page__bottom-container_right .credit-card-info input {
+.credit-card-info input {
     height: 45px;
     width: 100%;
 
@@ -259,7 +253,7 @@ Payment method
     border-radius: 0.5rem;
 }
 
-.checkout-page__bottom-container_right .credit-card-info span {
+.credit-card-info span {
     color: rgb(202, 25, 25);
 }
 
