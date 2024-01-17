@@ -166,8 +166,8 @@ Rainy days description
     min-height: 80vh;
     width: 100%;
 
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
-        min-height: 70vh;
+    @media only screen and (min-width: 360px) and (max-width: 1100px) {
+        min-height: 50vh;
     }
 }
 
@@ -181,7 +181,7 @@ Rainy days description
 
     z-index: 1;
 
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
+    @media only screen and (min-width: 360px) and (max-width: 1100px) {
         margin-left: 0;
     }
 }
@@ -189,15 +189,16 @@ Rainy days description
 .about-container__bg {
     position: absolute;
 
+    display: flex;
     align-items: flex-end;
 
-    min-height: 500px;
+    min-height: 50vh;
     width: 100%;
 
     background: url('../../assets/images/snowboarder.jpg') top right / cover
         no-repeat;
 
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
+    @media only screen and (min-width: 360px) and (max-width: 1100px) {
         position: unset;
 
         min-height: 212px;
@@ -211,13 +212,12 @@ Rainy days description
     z-index: 1;
 }
 .about-container__text p {
-    margin-left: 26em;
-    max-width: 550px;
+    margin-left: 60%;
     font-size: 2rem;
     font-style: italic;
     font-weight: light;
 
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
+    @media only screen and (min-width: 360px) and (max-width: 1100px) {
         position: unset;
         margin-left: 0;
         padding: 0 2rem;
