@@ -14,17 +14,26 @@
 CHECKOUT PAGE
 
 ------------------------- */
+h1 {
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+    text-transform: none;
+    font-size: 2rem;
+}
 
 .checkout-page-container {
     margin: 4rem 0;
 }
 
 .checkout-page__top-container {
-    width: 90%;
+    width: 70%;
 }
 
 .order-review-container {
     flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
     gap: 2rem;
 }
 
@@ -56,10 +65,9 @@ CHECKOUT PAGE
 }
 
 .order-review__order-info {
-    width: 750px;
-
+    width: 950px;
     @media only screen and (min-width: 360px) and (max-width: 768px) {
-        width: 300px;
+        max-width: 400px;
     }
 }
 
