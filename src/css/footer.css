@@ -143,6 +143,10 @@ Links and information
     }
 }
 
+.links p {
+    font-weight: 700;
+}
+
 .links > div {
     display: flex;
     flex-direction: column;
