@@ -16,18 +16,7 @@ CONTACT US PAGE
 ------------------------- */
 
 #contact-page {
-    display: grid;
-    grid-template-columns: 1fr, 1fr;
-
-    justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center;
-
-    min-height: 100vh;
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
-        margin: 6rem 0;
-    }
+    margin: 6rem 0;
 }
 
 .contact-page__container {
