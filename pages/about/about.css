@@ -54,6 +54,8 @@
     padding: 4rem;
 
     background: var(--primary-info-bg);
+
+    line-height: 1.5rem;
 }
 
 .reverse {
