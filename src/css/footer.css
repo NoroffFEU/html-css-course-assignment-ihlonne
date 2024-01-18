@@ -38,6 +38,11 @@ Subscribe section
     letter-spacing: 2px;
 }
 
+.subscribe-container p {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
 .submit-container {
     display: flex;
     justify-content: space-between;
