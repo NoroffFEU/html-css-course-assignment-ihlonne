@@ -20,7 +20,7 @@
 
     min-height: 100vh;
 
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         margin: 6rem 0;
     }
 }
@@ -33,7 +33,7 @@
     width: 80%;
     height: auto;
 
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         flex-wrap: wrap;
 
         margin-top: 0;
@@ -45,7 +45,7 @@
     max-width: 40%;
     z-index: 1;
 
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         max-width: 100%;
     }
 }

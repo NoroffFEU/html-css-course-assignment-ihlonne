@@ -38,7 +38,7 @@ Navigation bar
     background-color: var(--navigation-bg);
     padding: 1rem 3.5rem;
 
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         display: none;
     }
 }
@@ -55,7 +55,7 @@ Navigation bar
 .navbar .navigation ul {
     display: inline-flex;
 
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         display: none;
     }
 }
@@ -115,7 +115,7 @@ Navigation bar
 .mobile-navigation {
     display: none;
 
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -130,13 +130,13 @@ Navigation bar
 }
 
 .mobile-navigation .mobile-logo {
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         height: 35px;
     }
 }
 
 .mobile-navigation .mobile-logo img {
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         height: 100%;
     }
 }

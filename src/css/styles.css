@@ -24,7 +24,7 @@ Hero
 
     background: url('../../assets/images/heroImg.jpg') center / cover no-repeat;
 
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         justify-content: flex-end;
         align-items: center;
 
@@ -38,7 +38,7 @@ Hero
 .hero-container__items {
     margin-left: 6rem;
 
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         margin-left: 0;
     }
 }
@@ -50,7 +50,7 @@ Hero
     color: #fff;
     letter-spacing: 1px;
 
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         color: var(--primary-text);
     }
 }
@@ -60,7 +60,7 @@ Hero
     height: 3px;
     width: 325px;
 
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         background-color: var(--primary-text);
     }
 }
@@ -87,7 +87,7 @@ Hero
     transition: 1s ease;
     cursor: pointer;
 
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         background: var(--primary-bg);
         color: var(--primary-text);
         border: 3px solid var(--primary-text);
@@ -99,7 +99,7 @@ Hero
     color: var(--secondary-contrast);
     font-weight: 900;
 
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         background: var(--primary-bg);
         color: var(--primary-text);
         border: 3px solid var(--primary-text);
@@ -122,7 +122,7 @@ Womens and mens jackets
     min-height: 33vh;
     width: 100%;
 
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         overflow: hidden;
     }
 }
@@ -165,8 +165,9 @@ Rainy days description
 .about-container {
     min-height: 80vh;
     width: 100%;
+    margin: 2rem 0;
 
-    @media only screen and (min-width: 360px) and (max-width: 1100px) {
+    @media only screen and (max-width: 1100px) {
         min-height: 50vh;
     }
 }
@@ -181,8 +182,9 @@ Rainy days description
 
     z-index: 1;
 
-    @media only screen and (min-width: 360px) and (max-width: 1100px) {
+    @media only screen and (max-width: 1100px) {
         margin-left: 0;
+        font-size: 2rem;
     }
 }
 
@@ -198,7 +200,7 @@ Rainy days description
     background: url('../../assets/images/snowboarder.jpg') top right / cover
         no-repeat;
 
-    @media only screen and (min-width: 360px) and (max-width: 1100px) {
+    @media only screen and (max-width: 1100px) {
         position: unset;
 
         min-height: 212px;
@@ -217,7 +219,7 @@ Rainy days description
     font-style: italic;
     font-weight: light;
 
-    @media only screen and (min-width: 360px) and (max-width: 1100px) {
+    @media only screen and (max-width: 1100px) {
         position: unset;
         margin-left: 0;
         padding: 0 2rem;
@@ -237,7 +239,7 @@ Rainy days description
 
     margin: 0 0 6em 0;
 
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         margin: 0 0 4em 0;
     }
 }
@@ -257,7 +259,7 @@ Rainy days description
     font-size: 0.875rem;
     text-align: center;
 
-    @media only screen and (min-width: 360px) and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         margin-top: 1rem;
     }
 }
