@@ -1,0 +1,216 @@
+/* Reset */
+@import url('../../src/css/reset.css');
+/* Variables */
+@import url('../../src/css/variables.css');
+/* Hamburger menu */
+@import url('../../src/css/hamburger.css');
+/* Header */
+@import url('../../src/css/header.css');
+/* Footer */
+@import url('../../src/css/footer.css');
+
+/* ------------------------- 
+
+PRODUCT INFO PAGE
+
+------------------------- */
+
+.product-page {
+    min-height: 100vh;
+}
+
+.product-page__items-container {
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    align-items: flex-start;
+
+    margin: 6rem 4rem;
+
+    width: 80%;
+
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.product-page__items-container__images-main {
+    max-width: 100%;
+}
+
+.product-page__items-container__images-main img {
+    max-width: 100%;
+}
+
+.product-page__items-container__images-secondary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+    max-width: 100%;
+}
+
+.product-page__items-container__images-secondary img {
+    max-width: 30%;
+}
+
+.product-page__items-container__info {
+    margin-left: 6rem;
+
+    max-width: 500px;
+
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0;
+    }
+}
+
+.product-page__items-container__info h1 {
+    @media only screen and (max-width: 768px) {
+        font-size: 1rem;
+        width: 100%;
+    }
+}
+
+.product-page__items-container__info-text .price {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.product-page__items-container__info-text .description {
+    max-width: 85%;
+    margin-top: 3rem;
+
+    @media only screen and (max-width: 768px) {
+        max-width: 100%;
+    }
+}
+
+.product-page__items-container__select {
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.product-page__items-container__info-color-select {
+    margin: 4rem 0 2rem 0;
+
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.product-page__items-container__info-color-select img {
+    width: 50px;
+    height: 50px;
+
+    padding: 0.15rem;
+    margin: 0 0.25rem;
+
+    border-radius: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+
+    object-fit: cover;
+
+    transition: 1s ease;
+}
+
+.product-page__items-container__info-color-select img:hover {
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.product-page__items-container__info-color-select img:first-child {
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.product-page__items-container__info-color-select p {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.info-size-select__btn {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+
+    margin: 0 0.15rem;
+    padding: 0.5rem;
+
+    background: var(--primary-bg);
+    font-weight: 700;
+
+    border-radius: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+
+    cursor: pointer;
+}
+
+.info-size-select__btn:hover {
+    background-color: var(--primary-text);
+    color: var(--primary-bg);
+}
+
+.info-size-select__btn-selected {
+    background-color: var(--primary-text);
+    color: var(--primary-bg);
+}
+
+.product-page-container__cta {
+    margin-top: 1.5rem;
+}
+
+.add-to-cart-btn {
+    width: 200px;
+    height: 45px;
+
+    background-color: var(--primary-text);
+    color: var(--primary-bg);
+    font-size: 1.25rem;
+    font-weight: 600;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.add-to-favorites-btn {
+    width: 45px;
+    height: 45px;
+
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    font-size: 1.25rem;
+    font-weight: 600;
+
+    border-radius: 10px;
+    border: 2px solid var(--primary-text);
+
+    cursor: pointer;
+}
+
+.add-to-favorites-btn:hover {
+    color: #a40013;
+
+    transition: 1s ease;
+}
+
+.product-page__additional-info {
+    margin-top: 1.5rem;
+}

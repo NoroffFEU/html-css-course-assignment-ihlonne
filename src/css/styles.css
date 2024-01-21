@@ -1,19 +1,265 @@
-/* Use import to split up your CSS into manageable chunks */
-@import url("./_reset.css");
-/* Files that are only needed to be imported are called partials */
-/* These are marked with an underscore: */
-@import url("./_variables.css");
-/* Feel free to add as many of these imports as you need */
+/* Reset */
+@import url('./reset.css');
+/* Variables */
+@import url('./variables.css');
+/* Hamburger menu */
+@import url('./hamburger.css');
+/* Header */
+@import url('./header.css');
+/* Footer */
+@import url('./footer.css');
 
-body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+/* ------------------------- 
+
+LANDING PAGE
+Hero  
+
+------------------------- */
+
+.hero-container {
+    align-items: flex-start;
+
+    min-height: 100vh;
+    width: 100%;
+
+    background: url('../../assets/images/heroImg.jpg') center / cover no-repeat;
+
+    @media only screen and (max-width: 768px) {
+        justify-content: flex-end;
+        align-items: center;
+
+        height: 85lvh;
+
+        background: url('../../assets/images/heroImg.jpg') center / cover
+            no-repeat;
+    }
 }
 
-.centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.hero-container__items {
+    margin-left: 6rem;
+
+    @media only screen and (max-width: 768px) {
+        margin-left: 0;
+    }
+}
+
+.hero-container__items h1 {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+
+    @media only screen and (max-width: 768px) {
+        color: var(--primary-text);
+    }
+}
+
+.hero-container__items > span {
+    background-color: #fff;
+    height: 3px;
+    width: 325px;
+
+    @media only screen and (max-width: 768px) {
+        background-color: var(--primary-text);
+    }
+}
+
+.hero-container__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container__items a {
+    padding: 1rem 2rem;
+    margin: 1.5rem 0.45rem;
+
+    background-color: transparent;
+    color: #fff;
+    font-weight: 900;
+
+    text-align: center;
+    text-decoration: none;
+
+    border: 3px solid #fff;
+
+    transition: 1s ease;
+    cursor: pointer;
+
+    @media only screen and (max-width: 768px) {
+        background: var(--primary-bg);
+        color: var(--primary-text);
+        border: 3px solid var(--primary-text);
+    }
+}
+
+.hero-container__items a:hover {
+    background-color: #fff;
+    color: var(--secondary-contrast);
+    font-weight: 900;
+
+    @media only screen and (max-width: 768px) {
+        background: var(--primary-bg);
+        color: var(--primary-text);
+        border: 3px solid var(--primary-text);
+    }
+}
+
+/* ------------------------- 
+
+LANDING PAGE 
+Womens and mens jackets
+
+------------------------- */
+
+.products-container {
+    min-height: 100vh;
+}
+
+.women-container,
+.men-container {
+    min-height: 33vh;
+    width: 100%;
+
+    @media only screen and (max-width: 768px) {
+        overflow: hidden;
+    }
+}
+
+.women-container h2,
+.men-container h2 {
+    font-size: 24px;
+    margin: 3em 0;
+}
+
+.women-container__products,
+.men-container__products {
+    display: flex;
+    gap: 1em;
+}
+
+.women-container__products img,
+.men-container__products img {
+    max-width: 266px;
+}
+
+.women-container__products-product__info,
+.men-container__products-product__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.women-container__products-product__info > div,
+.men-container__products-product__info > div {
+    font-weight: 700;
+}
+/* ------------------------- 
+
+LANDING PAGE
+Rainy days description 
+
+------------------------- */
+
+.about-container {
+    min-height: 80vh;
+    width: 100%;
+    margin: 2rem 0;
+
+    @media only screen and (max-width: 1100px) {
+        min-height: 50vh;
+    }
+}
+
+.about-container h1 {
+    margin-left: 20em;
+
+    font-size: 2.25rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+
+    z-index: 1;
+
+    @media only screen and (max-width: 1100px) {
+        margin-left: 0;
+        font-size: 2rem;
+    }
+}
+
+.about-container__bg {
+    position: absolute;
+
+    display: flex;
+    align-items: flex-end;
+
+    min-height: 50vh;
+    width: 100%;
+
+    background: url('../../assets/images/snowboarder.jpg') top right / cover
+        no-repeat;
+
+    @media only screen and (max-width: 1100px) {
+        position: unset;
+
+        min-height: 212px;
+
+        background-position: center;
+    }
+}
+
+.about-container__text {
+    position: relative;
+    z-index: 1;
+}
+.about-container__text p {
+    margin-left: 60%;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: light;
+
+    @media only screen and (max-width: 1100px) {
+        position: unset;
+        margin-left: 0;
+        padding: 0 2rem;
+
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+.about-container__text span {
+    font-weight: bold;
+}
+
+.info-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 0 0 6em 0;
+
+    @media only screen and (max-width: 768px) {
+        margin: 0 0 4em 0;
+    }
+}
+
+.info-container p:first-of-type {
+    font-weight: 700;
+}
+
+.info-container p {
+    margin-top: 2em;
+}
+
+.info-container__items {
+    max-width: 185px;
+    margin: 0 2em;
+
+    font-size: 0.875rem;
+    text-align: center;
+
+    @media only screen and (max-width: 768px) {
+        margin-top: 1rem;
+    }
 }
